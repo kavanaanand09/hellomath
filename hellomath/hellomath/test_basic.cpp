@@ -16,6 +16,7 @@ namespace hellomath {
 		return a + b;
 	}
 	
+	__attribute__((deprecated))
 	int sub(int a, int b) {
 		return a - b;
 	}
