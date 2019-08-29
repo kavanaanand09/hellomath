@@ -1,0 +1,11 @@
+{
+    "hyde-src-root": ".",
+    "hyde-yaml-dir": "../documentation/libraries",
+    "clang_flags": [
+        "-I.",
+        "-Wno-everything",
+        "-x",
+        "c++",
+        "-std=c++14"
+    ]
+}

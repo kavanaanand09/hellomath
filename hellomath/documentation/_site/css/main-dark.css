@@ -1,0 +1,325 @@
+/** Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
+
+* { margin: 0; }
+
+html, body { height: 100%; }
+
+/** Basic styling */
+body { font: 400 16px/1.5 "Source Serif Pro", serif; color: #d4d4d4; background-color: #1e1e1e; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; }
+
+pre, code { font-family: "Source Code Pro", monospace; }
+
+/** Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6, blockquote, ul, ol, dl, p { margin-bottom: 15px; }
+
+/** Images */
+img { max-width: 100%; vertical-align: middle; }
+
+/** Figures */
+figure > img { display: block; }
+
+figcaption { font-size: 14px; }
+
+/** Lists */
+ul, ol { margin-left: 30px; }
+
+li > ul, li > ol { margin-bottom: 0; }
+
+/** Headings */
+h1, h2, h3, h4, h5, h6 { font-family: "Source Sans Pro", sans-serif; font-weight: 400; }
+
+/** Links */
+a { color: #3690f8; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+/** Blockquotes */
+blockquote { color: #d4d4d4; background-color: #292929; border-left: 4px solid #3c3f46; padding-left: 15px; padding-top: 8px; padding-bottom: 8px; padding-right: 8px; }
+blockquote > :last-child { margin-bottom: 0; }
+
+/** Code formatting */
+dt { font-weight: bold; margin-top: 8px; }
+
+dd { margin-left: 8px; }
+
+pre { overflow-x: auto; margin: 0; }
+pre > code { line-height: 0.8; border: 0; padding-right: 0; padding-left: 0; }
+
+.wrapper { max-width: -webkit-calc(1000px - (30px * 2)); max-width: calc(1000px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(1000px - (30px)); max-width: calc(1000px - (30px)); padding-right: 15px; padding-left: 15px; } }
+
+/** Clearfix */
+.wrapper:after { content: ""; display: table; clear: both; }
+
+/** Icons */
+.icon > svg { display: inline-block; width: 16px; height: 16px; vertical-align: middle; }
+.icon > svg path { fill: #949597; }
+
+/** Site header */
+.site-header { background-color: #292929; border-bottom: 1px solid transparent; min-height: 32px; margin-bottom: 10px; padding-bottom: 14px; padding-top: 16px; position: relative; }
+
+.site-title { /*
+font-size: 26px;
+font-weight: 300;
+line-height: 56px;
+letter-spacing: -1px;
+margin-bottom: 0;
+float: left;
+*/ float: left; width: 50%; margin-top: 3px; margin-bottom: 3px; min-height: 32px; /*
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+*/ background-image: url("/images/site/hyde.svg"); background-repeat: no-repeat; background-size: contain; }
+
+.site-nav { float: right; line-height: 32px; margin-top: 3px; }
+.site-nav .menu-icon { display: none; }
+.site-nav .page-link { color: #d4d4d4; line-height: 1.5; }
+.site-nav .page-link:not(:last-child) { margin-right: 20px; }
+@media screen and (max-width: 600px) { .site-nav { position: absolute; top: 12px; right: 12px; background-color: inherit; border: 1px solid transparent; border-radius: 5px; text-align: right; }
+  .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; }
+  .site-nav .menu-icon > svg { width: 18px; height: 15px; }
+  .site-nav .menu-icon > svg path { fill: #d4d4d4; }
+  .site-nav .trigger { clear: both; display: none; }
+  .site-nav:hover .trigger { display: block; padding-bottom: 5px; }
+  .site-nav .page-link { display: block; padding: 5px 10px; margin-left: 20px; }
+  .site-nav .page-link:not(:last-child) { margin-right: 0; } }
+
+/** Site footer */
+.site-footer { border-top: 1px solid transparent; padding: 20px 0; background-color: #292929; }
+
+.footer-heading { font-size: 16px; margin-bottom: 0; }
+
+.contact-list, .social-media-list { list-style: none; margin-left: 0; }
+
+.footer-table { font-size: 14px; color: #949597; width: 100%; }
+.footer-table > tbody > tr > td > a { color: #949597; }
+
+.footer-left { text-align: left; vertical-align: top; width: 33%; }
+
+.footer-center { text-align: center; vertical-align: top; width: 34%; }
+
+.footer-right { text-align: right; vertical-align: top; width: 33%; }
+
+/** Main content */
+.main-content { min-height: 100%; margin-bottom: -100px; background-color: #1e1e1e; }
+
+.main-content:after { content: ""; display: block; }
+
+.site-footer, .main-content:after { height: 100px; box-sizing: border-box; }
+
+/** Top bar */
+.top-bar { display: flex; width: 100%; box-sizing: border-box; }
+@media screen and (max-width: 600px) { .top-bar { flex-direction: column; } }
+
+.top-bar-breadcrumb { flex: 0 0 auto; }
+
+.top-bar-spacer { flex: 1 1 auto; }
+
+.top-bar-theme { flex: 0 0 auto; }
+
+/** Breadcrumbs */
+.breadcrumb { list-style-type: none; margin: 0; padding: 0; }
+.breadcrumb > li { display: inline; }
+.breadcrumb > li.active { font-style: oblique; }
+.breadcrumb > li.crumb:before { content: "\2009|\a0"; }
+
+/** Page content */
+.page-content { padding: 15px 0; }
+
+.post-list { margin-left: 0; list-style: none; }
+.post-list > li { margin-bottom: 30px; }
+
+.post-meta { font-size: 14px; color: #949597; }
+
+.post-link { display: block; font-size: 24px; }
+
+/** Posts */
+.post-header { margin-bottom: 15px; }
+.post-header > .code { font-family: "Source Code Pro", monospace; }
+
+.post-title { font-size: 2.5em; }
+@media screen and (max-width: 800px) { .post-title { font-size: 2.3em; } }
+
+.post-content { margin-bottom: 30px; }
+.post-content h1 { font-size: 2em; margin-top: 30px; margin-bottom: 10px; }
+@media screen and (max-width: 800px) { .post-content h1 { font-size: 1.8em; } }
+.post-content h2 { font-size: 1.8em; }
+@media screen and (max-width: 800px) { .post-content h2 { font-size: 1.6em; } }
+.post-content h3 { font-size: 1.6em; }
+@media screen and (max-width: 800px) { .post-content h3 { font-size: 1.4em; } }
+.post-content h4 { font-size: 1.4em; }
+@media screen and (max-width: 800px) { .post-content h4 { font-size: 1.2em; } }
+.post-content h5 { font-size: 1.2em; }
+@media screen and (max-width: 800px) { .post-content h5 { font-size: 1.0em; } }
+
+/** Tables */
+table { border-collapse: collapse; }
+
+.indent { margin-left: 15px; }
+
+/** Definition tables are indented on the left, and have horizontal lines between every row. */
+.definition-table { margin-left: 15px; margin-bottom: 15px; border-bottom: 1px solid #505050; border-top: 1px solid #505050; width: 100%; }
+.definition-table > tbody > tr { border-top: 1px solid #505050; }
+.definition-table > tbody > tr > th { text-align: left; }
+.definition-table > tbody > tr > td { padding-right: 1.5em; vertical-align: top; }
+.definition-table > tbody > tr > td > p { margin: 0; display: inline; }
+.definition-table > tbody > tr > td.type { font-family: "Source Code Pro", monospace; white-space: nowrap; vertical-align: top; }
+.definition-table > tbody > tr > td.field { font-family: "Source Code Pro", monospace; white-space: nowrap; vertical-align: top; }
+.definition-table > tbody > tr > td.decl { text-indent: -3em; padding-left: 3em; font-family: "Source Code Pro", monospace; vertical-align: top; }
+.definition-table > tbody > tr > td.defn { padding-right: 0; }
+
+/** Associated tables are those that enumerate library subcomponents and associated elements. */
+.associated-table { margin-left: 15px; margin-bottom: 15px; border-bottom: 1px solid #505050; border-top: 1px solid #505050; width: 100%; }
+.associated-table > tbody > tr { border-top: 1px solid #505050; }
+.associated-table > tbody > tr > th { text-align: left; }
+.associated-table > tbody > tr > td > p { margin: 0; display: inline; }
+.associated-table > tbody > tr > td.name { text-indent: -3em; padding-left: 3em; font-family: "Source Code Pro", monospace; vertical-align: top; padding-right: 1.5em; }
+
+/** Declaration tables are identical to definition tables, but without the indent. */
+.declaration-table { margin-bottom: 15px; border-bottom: 1px solid #505050; border-top: 1px solid #505050; width: 100%; }
+.declaration-table > tbody > tr { border-top: 1px solid #505050; }
+.declaration-table > tbody > tr > th { text-align: left; }
+.declaration-table > tbody > tr > td > p { margin: 0; display: inline; }
+.declaration-table > tbody > tr > td.decl { font-family: "Source Code Pro", monospace; white-space: nowrap; vertical-align: top; padding-right: 1.5em; }
+
+/** State transition tables, like the one in the transaction docs. */
+.state-transition { margin-bottom: 15px; border-bottom: 1px solid #505050; border-top: 1px solid #505050; width: 100%; }
+.state-transition > thead > tr { border-bottom: 1px solid #505050; }
+.state-transition > tbody > tr { border-top: 1px solid #505050; }
+
+/** Parameter Notes, like the one in the collection connect_insert docs. */
+.parameter-table { margin-bottom: 15px; border-bottom: 1px solid #505050; border-top: 1px solid #505050; width: 100%; }
+.parameter-table > thead > tr { border-bottom: 1px solid #505050; }
+.parameter-table > thead > tr > th { font-weight: bold; text-align: left; }
+.parameter-table > tbody > tr { border-top: 1px solid #505050; border-spacing: 0.1em; }
+.parameter-table > tbody > tr > td { vertical-align: top; padding-right: 0.5em; }
+
+/** Directory tables, like the ones that structure the `eng` folder. */
+.directory-table { margin-left: 1em; }
+.directory-table > tbody > tr > td { padding-right: 0.2em; line-height: 1.0; vertical-align: top; }
+
+/** Description list for method descriptions */
+.description-list > li { padding-bottom: 0.5em; }
+.description-list > li > p { margin: 0; display: inline; }
+
+/** Annotations. */
+span.annotation { color: green; font-style: italic; }
+
+/** Parameter tables are identical to definition tables, but without the horizontal lines. */
+.parameter-table { margin-left: 15px; margin-bottom: 15px; width: 100%; }
+.parameter-table > tbody > tr > th { text-align: left; }
+.parameter-table > tbody > tr > td { vertical-align: top; }
+.parameter-table > tbody > tr > td > p { margin: 0; display: inline; }
+.parameter-table > tbody > tr > td.decl { font-family: "Source Code Pro", monospace; padding-right: 1.5em; }
+
+/** Example tables are indented on the left, and have horizontal lines between every row. */
+.example-table { margin-bottom: 15px; border-bottom: 1px solid #505050; border-top: 1px solid #505050; width: 100%; }
+.example-table > tbody > tr { border-top: 1px solid #505050; }
+.example-table > tbody > tr > th { text-align: left; }
+.example-table > tbody > tr > td { vertical-align: top; }
+.example-table > tbody > tr > td > p { margin: 0; display: inline; }
+.example-table > tbody > tr > td.decl_func { font-family: "Source Code Pro", monospace; }
+.example-table > tbody > tr > td.decl_link { font-family: "Source Code Pro", monospace; padding-left: 1.5em; }
+.example-table > tbody > tr > td.defn { padding-left: 1.5em; }
+
+/** Contributors listed in the About page */
+.contributors-table > tbody > tr > td { padding-left: 1.5em; padding-bottom: 1em; }
+.contributors-table > tbody > tr > td > img { width: 5em; height: 5em; }
+
+/** Styling for some of the auto generated stuff */
+.declaration-list > p { display: inline; }
+
+/** Front page iconography */
+.icon-table { margin: auto; border-collapse: separate; border-spacing: 3em 0; }
+.icon-table > tbody > tr > td > a { text-decoration: none; }
+@media screen and (max-width: 600px) { .icon-table { border-spacing: 1em 0; } }
+
+.icon-box { background: #949597; color: #949597; border-radius: 1em; }
+@media screen and (max-width: 600px) { .icon-box { border-radius: .3em; } }
+.icon-box > .top { border-radius: 1em 1em 0 0; }
+@media screen and (max-width: 600px) { .icon-box > .top { border-radius: .3em .3em 0 0; } }
+.icon-box > .top > .fa { display: inline-block; width: 1.7em; text-align: center; line-height: 1.4em; font-size: 5em; vertical-align: middle; }
+@media screen and (max-width: 600px) { .icon-box > .top > .fa { font-size: 2em; } }
+.icon-box > .bottom { background: white; border-radius: 0 0 1em 1em; border-left: 1px solid transparent; border-right: 1px solid transparent; border-bottom: 1px solid transparent; font-weight: bold; text-align: center; padding-top: .7em; padding-bottom: .7em; }
+@media screen and (max-width: 600px) { .icon-box > .bottom { padding-top: .2em; padding-bottom: .2em; border-radius: 0 0 .3em .3em; } }
+.icon-box:hover { background: #006000; color: #006000; }
+.icon-box:hover > .bottom { background: white; border-left: 1px solid transparent; border-right: 1px solid transparent; border-bottom: 1px solid transparent; }
+
+.rss-subscribe { text-align: right; }
+
+/** Dialogs, for lack of a better name */
+.warning-box { margin: 0; margin-bottom: 15px; padding: 0.5em 1em; border-radius: 0.5em; border: 1px solid #f0f000; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9f977+0,fcfccf+100 */ background: #f9f977; /* Old browsers */ background: -moz-linear-gradient(top, #f9f977 0%, #fcfccf 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #f9f977 0%, #fcfccf 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #f9f977 0%, #fcfccf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f977', endColorstr='#fcfccf',GradientType=0 ); /* IE6-9 */ }
+.warning-box:before { content: "Warning: "; }
+
+/** Syntax highlighting styles */
+/** Syntax highlighting styles */
+/* `highlighted` text */
+code.highlighter-rouge { padding: 0.1em 0.3em; font-size: 0.8em; color: #d7ba7d; background-color: #1e1e1e; border: 1px solid #1e1e1e; }
+
+/* `highlighted` text in headers or links */
+h1 code.highlighter-rouge, h2 code.highlighter-rouge, h3 code.highlighter-rouge, h4 code.highlighter-rouge, h5 code.highlighter-rouge, h6 code.highlighter-rouge, a code.highlighter-rouge { padding: 0.1em; font-size: 0.9em; color: inherit; background-color: inherit; border: none; }
+
+.highlighter-rouge pre.highlight { border-left: 4px solid inherit; margin: 1em 0; overflow: auto; padding: 1em; background-color: #161616; color: #d4d4d4; border-radius: 3px; }
+
+pre.highlight .c { color: #009926; font-style: italic; }
+pre.highlight .err { color: #a61717; }
+pre.highlight .k { color: #3690f8; }
+pre.highlight .o { font-weight: bold; }
+pre.highlight .cm { color: #009926; font-style: italic; }
+pre.highlight .cp { color: #c33f40; font-weight: bold; }
+pre.highlight .c1 { color: #009926; font-style: italic; }
+pre.highlight .cs { color: #999; font-weight: bold; font-style: italic; }
+pre.highlight .gd { color: #000; background-color: #fdd; }
+pre.highlight .gd .x { color: #000; background-color: #faa; }
+pre.highlight .ge { font-style: italic; }
+pre.highlight .gr { color: #a00; }
+pre.highlight .gh { color: #999; }
+pre.highlight .gi { color: #000; background-color: #dfd; }
+pre.highlight .gi .x { color: #000; background-color: #afa; }
+pre.highlight .go { color: #888; }
+pre.highlight .gp { color: #555; }
+pre.highlight .gs { font-weight: bold; }
+pre.highlight .gu { color: #aaa; }
+pre.highlight .gt { color: #a00; }
+pre.highlight .kc { font-weight: bold; }
+pre.highlight .kd { font-weight: bold; }
+pre.highlight .kp { font-weight: bold; }
+pre.highlight .kr { font-weight: bold; }
+pre.highlight .kt { color: #458; font-weight: bold; }
+pre.highlight .m { color: #099; }
+pre.highlight .s { color: #d14; }
+pre.highlight .na { color: #008080; }
+pre.highlight .nb { color: #0086B3; }
+pre.highlight .nc { color: #458; font-weight: bold; }
+pre.highlight .no { color: #008080; }
+pre.highlight .ni { color: #800080; }
+pre.highlight .ne { color: #900; font-weight: bold; }
+pre.highlight .nf { color: #900; font-weight: bold; }
+pre.highlight .nn { color: #555; }
+pre.highlight .nt { color: #3690f8; }
+pre.highlight .nv { color: #008080; }
+pre.highlight .ow { font-weight: bold; }
+pre.highlight .w { color: #bbb; }
+pre.highlight .mf { color: #099; }
+pre.highlight .mh { color: #099; }
+pre.highlight .mi { color: #099; }
+pre.highlight .mo { color: #099; }
+pre.highlight .sb { color: #d14; }
+pre.highlight .sc { color: #d14; }
+pre.highlight .sd { color: #d14; }
+pre.highlight .s2 { color: #d14; }
+pre.highlight .se { color: #d14; }
+pre.highlight .sh { color: #d14; }
+pre.highlight .si { color: #d14; }
+pre.highlight .sx { color: #d14; }
+pre.highlight .sr { color: #009926; }
+pre.highlight .s1 { color: #d14; }
+pre.highlight .ss { color: #990073; }
+pre.highlight .bp { color: #999; }
+pre.highlight .vc { color: #008080; }
+pre.highlight .vg { color: #008080; }
+pre.highlight .vi { color: #008080; }
+pre.highlight .il { color: #099; }

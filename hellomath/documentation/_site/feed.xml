@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hyde Example Docs</title>
+    <description>A front-end to Jekyll that parses C++ sources to produce and enforce out-of-line documentation</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 28 Aug 2019 17:25:34 -0700</pubDate>
+    <lastBuildDate>Wed, 28 Aug 2019 17:25:34 -0700</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Welcome!</title>
+        <description>&lt;p&gt;This is the landing page for the &lt;code class=&quot;highlighter-rouge&quot;&gt;hyde&lt;/code&gt; sample files example site. Poke around in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Libraries&lt;/code&gt; section, above.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Oct 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2018/10/30/welcome.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/10/30/welcome.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

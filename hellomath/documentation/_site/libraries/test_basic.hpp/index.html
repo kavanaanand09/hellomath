@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>test_basic.hpp</title>
+  <meta name="description" content="A front-end to Jekyll that parses C++ sources to produce and enforce out-of-line documentation">
+  <noscript>
+    <link rel="stylesheet" href="/css/main-light.css">
+  </noscript>
+  <link rel="stylesheet" id="main-style">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" title="Hyde Example Docs" href="http://localhost:4000/feed.xml">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+
+  <body> 
+    <noscript>
+      <style>#site-wrapper { display: initial !important}</style>
+    </noscript>
+    <div id="site-wrapper" style="display: none">
+      <div class="main-content">
+        <header class="site-header">
+
+  <div class="wrapper" id="page-top">
+
+    <a class="site-title" href="/"></a>
+
+    <nav class="site-nav">
+      <!-- #page-top is hack because html proofer doesn't understand # -->
+      <a href="#page-top" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        
+            <a class="page-link" href="/about/">About</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+        <div class="wrapper">
+    <div class="top-bar">
+        <div class="top-bar-breadcrumb">
+            
+
+
+
+
+
+<div class="breadcrumb-wrapper">
+  <ol class="breadcrumb">
+    <li><a href="/"><i class="fa fa-home"></i></a></li>
+    
+      
+         
+         
+         
+         
+         
+         
+         
+         
+         
+        
+        
+        
+      <li> |
+        
+          <a href='/libraries/'>API Documentation</a>
+        
+      </li>
+    
+      
+         
+         
+         
+         
+         
+         
+         
+         
+        
+        
+        
+      <li> |
+        
+          <a href='/libraries/test_basic.hpp/'>test_basic.hpp</a>
+        
+      </li>
+    
+  </ol>
+</div>
+
+        </div>
+        <div class="top-bar-spacer"></div>
+        <div class="top-bar-theme">
+            <div class="theme">
+    <a id="theme-switcher"></a>
+</div>
+
+<script type="text/javascript">
+    'use strict';
+    {
+        const key = "theme";
+        const switcher = document.getElementById("theme-switcher");
+        const content = document.getElementById("site-wrapper");
+
+        function theme(name, next) {
+            if (name === "dark") {
+                set("/css/main-dark.css");            
+            }
+            else {
+                set("/css/main-light.css");               
+            }
+
+            store(name);
+
+            switcher.textContent = "<" + next + ">";
+        }
+
+        function set(url){
+            const id = "main-style";
+
+            // Hide content while changing styles to avoid flashing unstyled content
+            content.style.display = "none";
+
+            let style = document.getElementById(id);
+            const parent = style.parentElement;
+            parent.removeChild(style);
+            style = document.createElement('link');
+            style.type = 'text/css';
+            style.rel = 'stylesheet';
+            style.id = id;
+            style.onload = () => {
+                content.style.display = "initial";
+            };
+            style.href = url;
+            parent.appendChild(style);
+        }
+
+        function store(name){
+            localStorage.setItem(key, name);
+        }
+
+        function load() {
+            let name = localStorage.getItem(key);
+            if (name == 'undefined' || name == undefined) {
+                name = "light";            
+            }
+            
+            return name;
+        }
+
+        function swap() {
+            const name = load();
+
+            theme(next(name), name);
+        }
+
+        function next(current) {
+            if (current === "light") {
+                return "dark";
+            } else {
+                return "light";
+            }
+        }
+
+        // Load saved theme
+        const name = load();
+        theme(name, next(name));
+
+        // Hook up switch handler
+        switcher.onclick = event => {
+            swap();
+        };
+    }
+</script> 
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="page-content">
+          <div class="wrapper">
+            <div class="post">
+  <header class="post-header">
+    <h1>test_basic.hpp</h1>
+  </header>
+
+  <article class="post-content">
+    <p><strong>MISSING</strong></p>
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<h3>Functions</h3>
+<table class='associated-table'>
+  
+    <tr>
+        <td class='name'>
+          <div><a href="/libraries/test_basic.hpp/f_add.html">add</a></div>
+        </td>
+        <td class='brief'>
+            
+                <p><strong>MISSING</strong></p>
+
+            
+            
+        </td>
+    </tr>
+  
+    <tr>
+        <td class='name'>
+          <div><a href="/libraries/test_basic.hpp/f_sub.html">sub</a></div>
+        </td>
+        <td class='brief'>
+            
+                <p><strong>MISSING</strong></p>
+
+            
+            
+        </td>
+    </tr>
+  
+</table>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+</div>
+
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+  <div class="wrapper">
+    <h2 class="footer-heading">Hyde Example Docs &mdash; Website showing a possible Jekyll-formatted hyde output.</h2>
+    <table class='footer-table'>
+        <tr>
+            <td class='footer-left'>
+                Page owner(s):
+                
+                    <a href='https://git.corp.adobe.com/__MISSING__'>__MISSING__</a>&nbsp;
+                
+            </td>
+            <td class='footer-center'>
+            </td>
+            <td  class='footer-right'>
+                Last updated: 2019-08-28 17:25:34 -0700
+            </td>
+        </tr>
+    </table>
+  </div>
+</footer>
+
+    </div>
+  </body>
+
+</html>
