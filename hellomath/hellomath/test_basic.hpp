@@ -13,10 +13,24 @@
 
 
 namespace hellomath {
+
+inline namespace v1 {
 	
 	int add(int a, int b);
-	
-	int sub(int a, int b);
+
+    int sub(int a, int b);
+
+}
+
+inline namespace v2 {
+    
+    float add(float a, float b, float c);
+    
+    float sub(float a, float b, float c);
+
+}
+
+
 	
 }
 
